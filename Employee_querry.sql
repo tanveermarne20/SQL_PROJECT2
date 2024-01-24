@@ -2,6 +2,11 @@
 --joining_date is after 20 March 2022.
 
 
+SELECT *
+FROM EMPLOYEES
+WHERE JOINING_DATE >'20-03-2022';
+
+
 --2) Write a query to display emp_no, first_name, last_name, department of
 --the employee whose department is ‘Finance’.
 
