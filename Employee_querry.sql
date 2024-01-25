@@ -46,4 +46,11 @@ WHERE JOINING_DATE >'20-03-2022';
 --to the salary of the employee whose salary is below 25000 and
 --display final salary as column name ‘final_salary’.
 
---I am Happy
+--
+
+
+
+
+
+
+--I AM UTILIZING SQL DEVELOPER
