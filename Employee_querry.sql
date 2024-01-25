@@ -51,3 +51,4 @@ FROM EMPLOYEEs;
 
 --====================================================
 --I am going to bangalore
+--I am learning sql
