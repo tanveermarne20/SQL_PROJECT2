@@ -47,3 +47,7 @@ FROM EMPLOYEEs;
 --8) Write a query to display emp_no, first_name , salary and add 10000
 --to the salary of the employee whose salary is below 25000 and
 --display final salary as column name ‘final_salary’.
+
+
+--====================================================
+--I am going to bangalore
