@@ -1,10 +1,12 @@
 --1) Write a query to display all the records of the employee whose
 --joining_date is after 20 March 2022.
 
-
 SELECT *
 FROM EMPLOYEES
 WHERE JOINING_DATE >'20-03-2022';
+
+SELECT *
+FROM EMPLOYEEs;
 
 
 --2) Write a query to display emp_no, first_name, last_name, department of
