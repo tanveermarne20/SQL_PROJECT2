@@ -29,17 +29,27 @@ WHERE SALARY>=30000
 GROUP BY DEPARTMENT
 HAVING COUNT(EMP_NO)>=3;
 
-
 --5) Find the departments with a maximum salary greater than 60000 as
 --max_salary from the employee table.
+SELECT DEPARTMENT,MAX(SALARY) AS MAXI
+FROM EMPLOYEES
+WHERE SALARY>60000
+GROUP BY DEPARTMENT;
+
+
 
 
 
 --6) Find the department where the highest salary (as highest_salary) is
 --at least twice the lowest salary (as lowest_salary) in the employee
 --table.
-
-
+SELECT 
+DEPARTMENT,
+MAX(SALARY) AS HIGHEST_SAL,
+MIN(SALARY) AS LOWEST_SAL
+FROM EMPLOYEES
+GROUP BY DEPARTMENT
+HAVING MAX(SALARY)>=2*MIN(SALARY);
 
 --7) Determine the department with at least 5 employees (as
 --total_employees) where the total salary expense (as
