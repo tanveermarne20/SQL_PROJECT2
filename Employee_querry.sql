@@ -1,6 +1,15 @@
 --1) Write a query to display all the records of the employee whose
 --joining_date is after 20 March 2022.
 
+SELECT *
+FROM EMPLOYEES
+WHERE JOINING_DATE >'20-03-2022';
+
+SELECT *
+FROM EMPLOYEES;
+
+
+
 
 SELECT *
 FROM EMPLOYEES
@@ -46,11 +55,25 @@ WHERE JOINING_DATE >'20-03-2022';
 --to the salary of the employee whose salary is below 25000 and
 --display final salary as column name ‘final_salary’.
 
---
+
+SELECT *
+FROM EMPLOYEES;
+
+SELECT 
+FIRST_NAME,
+LAST_NAME
+FROM EMPLOYEES;
 
 
 
 
+SELECT FIRST_NAME,LAST_NAME,DEPARTMENT
+FROM EMPLOYEES
+WHERE UPPER(DEPARTMENT)='IT';
 
 
---I AM UTILIZING SQL DEVELOPER
+
+
+SELECT FIRST_NAME,LAST_NAME,DEPARTMENT
+FROM EMPLOYEES
+WHERE UPPER(DEPARTMENT)='HR';
