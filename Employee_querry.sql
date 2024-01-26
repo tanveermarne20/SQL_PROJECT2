@@ -6,7 +6,14 @@ FROM EMPLOYEES
 WHERE JOINING_DATE >'20-03-2022';
 
 SELECT *
-FROM EMPLOYEEs;
+FROM EMPLOYEES;
+
+
+
+
+SELECT *
+FROM EMPLOYEES
+WHERE JOINING_DATE >'20-03-2022';
 
 
 --2) Write a query to display emp_no, first_name, last_name, department of
@@ -49,5 +56,24 @@ FROM EMPLOYEEs;
 --display final salary as column name ‘final_salary’.
 
 
---====================================================
---I am going to bangalore
+SELECT *
+FROM EMPLOYEES;
+
+SELECT 
+FIRST_NAME,
+LAST_NAME
+FROM EMPLOYEES;
+
+
+
+
+SELECT FIRST_NAME,LAST_NAME,DEPARTMENT
+FROM EMPLOYEES
+WHERE UPPER(DEPARTMENT)='IT';
+
+
+
+
+SELECT FIRST_NAME,LAST_NAME,DEPARTMENT
+FROM EMPLOYEES
+WHERE UPPER(DEPARTMENT)='HR';
