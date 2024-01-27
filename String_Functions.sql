@@ -33,10 +33,14 @@ BIRTH_DATE,
 SUBSTR(BIRTH_DATE,6,2) AS BIRTH_MONTH
 FROM EMPLOYEES;
 
---5) Display 2023 at place of 2020 in birth date of the employee and also
+--5) Display 2023 at place of 98 in birth date of the employee and also
 --retrieve emp_no and first name from employee table
-
-
+SELECT 
+EMP_NO,
+FIRST_NAME,
+BIRTH_DATE,
+REPLACE(BIRTH_DATE,'98','2023') AS NEWONE
+FROM EMPLOYEES;
 --6) Retrieve the first name and last name of employees with 'son' as the
 --last three characters of their last name.
 
