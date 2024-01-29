@@ -41,9 +41,6 @@ ORDER BY TOTAL_EMPLOYEE DESC;
 
 
 
-
-
-
 --6) Determine the sum of salary as sum_sal in each
 --department, sorted in descending order of the sum from the
 --employee table
@@ -52,3 +49,12 @@ SELECT DEPARTMENT,SUM(SALARY) AS SUM_SAL
 FROM EMPLOYEES
 GROUP BY DEPARTMENT
 ORDER BY SUM_SAL DESC;
+
+
+SELECT *
+FROM EMPLOYEES;
+
+SELECT *
+FROM EMPLOYEES
+WHERE UPPER(DEPARTMENT)='HR';
+
