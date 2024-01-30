@@ -65,14 +65,24 @@ WHERE PRODUCT_NAME LIKE '%toy%';
 --6) Add a prefix "SALE: " to the beginning of the product name for all
 --products.
 
-
+UPDATE PRODUCTS
+SET PRODUCT_NAME=CONCAT('SALE:',PRODUCT_NAME);
 
 
 
 --7) Decrease the stock quantity by 1 for products with quantity more
 --than 10.
+UPDATE PRODUCTS
+SET QUANTITY=(QUANTITY-1)
+WHERE QUANTITY>10;
 
 
 
 
 --8) Update the quantity of products to NULL with price more than 9. 
+UPDATE PRODUCTS
+SET QUANTITY =NULL
+WHERE PRICE>9;
+
+
+
