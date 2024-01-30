@@ -6,7 +6,6 @@ CREATE TABLE employee (
     dob          DATE
 );
 
-
 INSERT INTO EMPLOYEE(ID,NAME,SALARY,DEPARTMENT,DOB) VALUES
 (101,'Jack',2000,'HR','19-05-1997');
 INSERT INTO EMPLOYEE(ID,NAME,SALARY,DEPARTMENT,DOB) VALUES
@@ -34,34 +33,50 @@ SELECT *
 FROM EMPLOYEE;
 
 --2) Write a query to display unique salary of employee table.
-
+--DISTINCT KEYWORD TAKE NULL VALUE ALSO
+SELECT  DISTINCT
+SALARY
+FROM EMPLOYEE;
 
 
 
 --3) Write a query to display all data of name and dob column of employee table.
-
+SELECT NAME,DOB
+FROM EMPLOYEE;
 
 
 
 --4) Write a query to display Id , name and the annual salary with the
 --column name 'annual_salary' from the employee table.
-
+SELECT 
+ID,
+NAME ,
+(SALARY*12) AS ANNUAL_SALARY
+FROM EMPLOYEE;
 
 
 
 --5) Write a query to display unique combination of salary and
 --department of the employee table
 
-
+SELECT DISTINCT
+SALARY,
+DEPARTMENT
+FROM EMPLOYEE;
 
 
 --6) Write a query to get id and display Name with salary in parentheses()
 --from the employee table and the resultant column name should be
 --emp_detail.
---ExampleId emp_detail
+
+--Id  emp_detail
 --101 Jack(2000)
 --102 Mack(6000)
 --103 Peter(4000)
 --104 Tom(3000)
 
+SELECT 
+ID,
+CONCAT(NAME,SALARY)AS EMP_DETAILS
+FROM EMPLOYEE;
 
