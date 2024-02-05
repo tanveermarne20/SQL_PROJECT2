@@ -80,3 +80,13 @@ DESC EMPLOYEES;
 SELECT *
 FROM EMPLOYEES;
 
+
+
+
+--Hii, .I am data analytical engineer from India
+
+
+
+
+
+
