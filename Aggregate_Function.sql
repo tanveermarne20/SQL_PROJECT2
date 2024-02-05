@@ -85,6 +85,12 @@ FROM EMPLOYEES;
 
 --Hii, .I am data analytical engineer from India
 
+SELECT *
+FROM EMPLOYEES;
+
+SELECT FIRST_NAME,LAST_NAME
+FROM EMPLOYEES;
+
 
 
 
